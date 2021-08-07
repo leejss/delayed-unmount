@@ -13,7 +13,6 @@ const Title: React.FC<TitleProps> = ({ mounted }) => {
 const App: React.FC = () => {
   const [mounted, setMounted] = useState(false);
   const shouldRenderChild = useDelayUnmount(mounted, 500);
-  console.log("shouldRenderChild", shouldRenderChild);
 
   const handleClick = () => {
     setMounted((prev) => !prev);
