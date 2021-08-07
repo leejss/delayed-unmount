@@ -23,5 +23,5 @@
 <!-- Small description -->
 <!-- Screenshot or video (with link) -->
 <p align="center">
-    <img alt="site screenshot" src="./unmount.webp" />
+    <img alt="site screenshot" src="./unmount.gif" />
 </p>
