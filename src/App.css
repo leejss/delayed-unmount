@@ -1,0 +1,62 @@
+@keyframes inAnimation {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outAnimation {
+  20% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.mount {
+  animation: inAnimation 500ms ease-in;
+}
+
+.unmount {
+  animation: outAnimation 510ms ease-in;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5rem;
+}
+button:hover {
+  color: tomato;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  background: tomato;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
